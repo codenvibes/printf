@@ -2,8 +2,8 @@
 <code> C </code> <code> Group project </code>
 
 # Team:
-- Tamara Lumumba
-- Terrence K
+- [Tamara Lumumba](https://github.com/TamaraLumumba)
+- [Terrence K](https://github.com/codenvibes)
 
 # Concepts
 For this project, we expect you to look at these concepts:
