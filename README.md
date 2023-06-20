@@ -1,5 +1,5 @@
 # **0x11. C - PRINTF** 
-<code><font size="5"> C </font></code> <code> Group project </code> 
+<bold><code> C </code> <code> Group project </code></bold>
 
 # Team:
 - Tamara Lumumba
