@@ -230,116 +230,177 @@ alex@ubuntu:~/c/printf$
 <details>
 <summary>
 
-###
+### 3. What one has not experienced, one will never understand in print
+`#advanced`
 </summary>
 
+Handle the following conversion specifiers:
 
+- `u`
+- `o`
+- `x`
+- `X`
+- You don’t have to handle the flag characters
+- You don’t have to handle field width
+- You don’t have to handle precision
+- You don’t have to handle the length modifiers
 </details>
 
 <details>
 <summary>
 
-###
+### 4. Nothing in fine print is ever good news
+`#advanced`
 </summary>
 
-
+Use a local buffer of 1024 chars in order to call `write` as little as possible.
 </details>
 
 <details>
 <summary>
 
-###
+### 5. My weakness is wearing too much leopard print
+`#advanced`
 </summary>
 
+Handle the following custom conversion specifier:
+- `S` : prints the string.
+- Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: `\x`, followed by the ASCII code value in hexadecimal (upper case - always 2 characters)
+```
+alex@ubuntu:~/c/printf$ cat main.c
+#include "main.h"
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+    _printf("%S\n", "Best\nSchool");
+    return (0);
+}
+alex@ubuntu:~/c/printf$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 main.c
+alex@ubuntu:~/c/printf$ ./a.out
+Best\x0ASchool
+alex@ubuntu:~/c/printf$
+```
 </details>
 
 <details>
 <summary>
 
-###
+### 6. How is the world ruled and led to war? Diplomats lie to journalists and believe these lies when they see them in print
+`#advanced`
 </summary>
 
+Handle the following conversion specifier: `p`.
 
+- You don’t have to handle the flag characters
+- You don’t have to handle field width
+- You don’t have to handle precision
+- You don’t have to handle the length modifiers
 </details>
 
 <details>
 <summary>
 
-###
+### 7. The big print gives and the small print takes away
+`#advanced`
 </summary>
 
+Handle the following flag characters for non-custom conversion specifiers:
 
+- `+`
+- space
+- `#`
 </details>
 
 <details>
 <summary>
 
-###
+### 8. Sarcasm is lost in print
+`#advanced`
 </summary>
 
+Handle the following length modifiers for non-custom conversion specifiers:
 
+- `l`
+- `h`
+
+Conversion specifiers to handle: `d`, `i`, `u`, `o`, `x`, `X`
 </details>
 
 <details>
 <summary>
 
-###
+### 9. Print some money and give it to us for the rain forests
+`#advanced`
 </summary>
 
-
+Handle the field width for non-custom conversion specifiers.
 </details>
 
 <details>
 <summary>
 
-###
+### 10. The negative is the equivalent of the composer's score, and the print the performance
+`#advanced`
 </summary>
 
-
+Handle the precision for non-custom conversion specifiers.
 </details>
 
 <details>
 <summary>
 
-###
+### 11. It's depressing when you're still around and your albums are out of print
+`#advanced`
 </summary>
 
-
+Handle the `0` flag character for non-custom conversion specifiers.
 </details>
 
 <details>
 <summary>
 
-###
+### 12. Every time that I wanted to give up, if I saw an interesting textile, print what ever, suddenly I would see a collection
+`#advanced`
 </summary>
 
-
+Handle the `-` flag character for non-custom conversion specifiers.
 </details>
 
 <details>
 <summary>
 
-###
+### 13. Print is the sharpest and the strongest weapon of our party
+`#advanced`
 </summary>
 
+Handle the following custom conversion specifier:
 
+- `r` : prints the reversed string
 </details>
 
 <details>
 <summary>
 
-###
+### 14. The flood of print has turned reading into a process of gulping rather than savoring
+`#advanced`
 </summary>
 
+Handle the following custom conversion specifier:
 
+- `R`: prints the rot13'ed string
 </details>
 
 <details>
 <summary>
 
-###
+### 15. *
+`#advanced`
 </summary>
 
-
+All the above options work well together.
 </details>
