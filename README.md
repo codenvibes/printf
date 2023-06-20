@@ -11,9 +11,6 @@ For this project, we expect you to look at these concepts:
 - [Flowcharts]()
 - [Technical Writing]()
 
-# Background Context
-Write your own printf function.
-
 # Resources
 [Secrets of printf](https://www.academia.edu/10297206/Secrets_of_printf_)
 
@@ -25,7 +22,7 @@ man or help:
 <details>
 <summary>
 
-## General
+### General
 </summary>
 
 - Allowed editors: `vi`, `vim`, `emacs`
@@ -45,7 +42,7 @@ man or help:
 <details>
 <summary>
 
-## GitHub
+### GitHub
 </summary>
 
 **There should be one project repository per group. The other members do not fork or clone the project to ensure only one of the team has the repository in their github account otherwise you risk scoring 0%**
@@ -56,7 +53,7 @@ man or help:
 <details>
 <summary>
 
-## Authorized functions and macros
+### Authorized functions and macros
 </summary>
 
 - `write (man 2 write)`
@@ -71,7 +68,7 @@ man or help:
 <details>
 <summary>
 
-## Compilation
+### Compilation
 </summary>
 
 - Your code will be compiled this way:
