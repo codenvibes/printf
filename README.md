@@ -1,7 +1,5 @@
 # **0x11. C - PRINTF** 
-**` C `** 
-
-**` Group project `**
+<code> C </code> <code> Group project </code>
 
 # Team:
 - Tamara Lumumba
