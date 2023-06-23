@@ -8,24 +8,14 @@
 # Notes
 
 <details>
-<summary>
-
-### Implementing the printf() function:
-</summary>
+<summary><h2>Implementing the printf() function:</h2></summary>
 
 <details>
-<summary>
-
-#### 1. Creating the function prototype:
-</summary>
+<summary><h3>1. Creating the function prototype:</h3></summary>
 </details>
 
 <details>
-<summary>
-
-#### 2. Writing the function body:
-</summary>
-
+<summary><h3>2. Writing the function body:</h3></summary>
 The function body will handle the different types of format specifiers and handle variable arguments using va_list, va_start and va_end macros.
 </details>
 </details>
