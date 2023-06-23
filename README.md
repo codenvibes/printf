@@ -5,6 +5,18 @@
 - [Tamara Lumumba](https://github.com/TamaraLumumba)
 - [Terrence K](https://github.com/codenvibes)
 
+<details>
+<summary>
+
+# Notes
+</summary>
+
+### Implementing the printf() function:
+
+</details>
+
+<br>
+
 # Concepts
 For this project, we expect you to look at these concepts:
 - [Group Projects](https://intranet.alxswe.com/concepts)
