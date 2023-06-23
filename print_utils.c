@@ -1,6 +1,7 @@
 /*
  * File: _printf.c
- * Decsription: Recreating the printf function of the C standard library.
+ * Decsription: The corresponding source file for print_utils.h contains the
+ *	        implementations of the printing utility functions.
  * Auth: Terrence M.K
  *	 Tamara Lumumba
  */
