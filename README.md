@@ -17,6 +17,13 @@ int _printf(const char *format, ...);
 ```
 <h3>2. Writing the function body:</h3>
 The function body will handle the different types of format specifiers and handle variable arguments using va_list, va_start and va_end macros.
+
+<details>
+<summary><h4>Handling the different types of format specifiers:</h4></summary>
+Handling variable arguments:
+
+The printf() function takes variable arguments, which means that the number of arguments passed to the function can vary. To handle variable arguments, we can use the va_list, va_start, and va_end macros. These macros are used to create a list of variable arguments, start the list, and end the list, respectively. This allows us to handle any number of arguments passed to the function. And these macros comes from the library header `<stdarg.h>`.
+</details>
 </details>
 
 # Concepts
