@@ -6,7 +6,6 @@
 - [Terrence K](https://github.com/codenvibes)
 
 # Notes
-
 <details>
 <summary><h2>Implementing the printf() function:</h2></summary>
 <h3>1. Creating the function prototype:</h3>
