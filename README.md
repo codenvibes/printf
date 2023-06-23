@@ -11,6 +11,10 @@
 The implementation of the printf() function starts by creating the function prototype, that declares the function name, return type, and the number and type of its parameters. The next step is to write the function body, which handles the different types of format specifiers and variable arguments.
 
 <h3>1. Creating the function prototype:</h3>
+
+```
+int _printf(const char *format, ...);
+```
 <h3>2. Writing the function body:</h3>
 The function body will handle the different types of format specifiers and handle variable arguments using va_list, va_start and va_end macros.
 </details>
