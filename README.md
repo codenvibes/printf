@@ -5,17 +5,29 @@
 - [Tamara Lumumba](https://github.com/TamaraLumumba)
 - [Terrence K](https://github.com/codenvibes)
 
+# Notes
+
 <details>
 <summary>
 
-# Notes
+### Implementing the printf() function:
 </summary>
 
-### Implementing the printf() function:
-#### 1. Creating the function prototype:
-#### 2. Writing the function body:
-The function body will handle the different types of format specifiers and handle variable arguments using va_list, va_start and va_end macros.
+<details>
+<summary>
 
+#### 1. Creating the function prototype:
+</summary>
+</details>
+
+<details>
+<summary>
+
+#### 2. Writing the function body:
+</summary>
+
+The function body will handle the different types of format specifiers and handle variable arguments using va_list, va_start and va_end macros.
+</details>
 </details>
 
 # Concepts
