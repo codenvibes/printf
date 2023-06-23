@@ -11,7 +11,7 @@
 # Notes
 </summary>
 
-### Implementing the printf() function:
+## Implementing the printf() function:
 
 </details>
 
