@@ -12,10 +12,9 @@
 </summary>
 
 ### Implementing the printf() function:
-1. Creating the function prototype:
-2. Writing the function body:
-
-    The function body will handle the different types of format specifiers and handle variable arguments using va_list, va_start and va_end macros.
+#### 1. Creating the function prototype:
+#### 2. Writing the function body:
+The function body will handle the different types of format specifiers and handle variable arguments using va_list, va_start and va_end macros.
 
 </details>
 
