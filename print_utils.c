@@ -1,5 +1,5 @@
 /*
- * File: _printf.c
+ * File: print_utils.c
  * Decsription: The corresponding source file for print_utils.h contains the
  *	        implementations of the printing utility functions.
  * Auth: Terrence M.K
