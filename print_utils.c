@@ -8,6 +8,7 @@
 
 #include <unistd.h>
 #include "print_utils.h"
+#include <stdint.h>
 
 /**
  * print_char - helper function to print a single character.
@@ -164,21 +165,14 @@ void print_non_printable_string(const char *str, int *count)
 }
 
 /**
- * print_pointer - Prints a pointer address in hexadecimal format.
- * @ptr: Pointer address to be printed.
+ * print_memory_address - Prints the memory address in hexadecimal format.
+ * @ptr: Pointer to be printed.
  * @count: Pointer to the count of characters printed.
  */
-void print_pointer(void *ptr, int *count)
+void print_address(const void *ptr, int *count)
 {
-	unsigned long int address = (unsigned long int)ptr;
-	char hex_digits[] = "0123456789abcdef";
-	int i;
-
+	uintptr_t address = (uintptr_t)ptr;
 	print_char('0', count);
 	print_char('x', count);
-
-	for (i = (sizeof(void *) * 2) - 1; i >= 0; i--)
-	{
-		print_char(hex_digits[(address >> (i * 4)) & 0xF], count);
-	}
+	print_hex(address, 0, count);
 }
