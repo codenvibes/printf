@@ -50,4 +50,5 @@ void print_percentage(int *count);
  * @count: Pointer to the count of characters printed.
  */
 void print_binary(unsigned int num, int *count);
+
 #endif
