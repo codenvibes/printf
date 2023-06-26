@@ -50,6 +50,7 @@ void print_percentage(int *count);
  * @count: Pointer to the count of characters printed.
  */
 void print_binary(unsigned int num, int *count);
+
 /**
  * print_unsigned - Prints an unsigned integer number.
  * @num: Unsigned integer number to be printed.
@@ -71,4 +72,5 @@ void print_hex(unsigned int num, int uppercase, int *count);
  * @count: Pointer to the count of characters printed.
  */
 void print_octal(unsigned int num, int *count);
+
 #endif
