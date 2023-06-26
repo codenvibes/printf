@@ -162,3 +162,23 @@ void print_non_printable_string(const char *str, int *count)
 		str++;
 	}
 }
+
+/**
+ * print_pointer - Prints a pointer address in hexadecimal format.
+ * @ptr: Pointer address to be printed.
+ * @count: Pointer to the count of characters printed.
+ */
+void print_pointer(void *ptr, int *count)
+{
+	unsigned long int address = (unsigned long int)ptr;
+	char hex_digits[] = "0123456789abcdef";
+	int i;
+
+	print_char('0', count);
+	print_char('x', count);
+
+	for (i = (sizeof(void *) * 2) - 1; i >= 0; i--)
+	{
+		print_char(hex_digits[(address >> (i * 4)) & 0xF], count);
+	}
+}
