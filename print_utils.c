@@ -85,6 +85,7 @@ void print_binary(unsigned int num, int *count)
 
 	print_char('0' + (num % 2), count);
 }
+
 /**
  * print_unsigned - Prints an unsigned integer number.
  * @num: Unsigned integer number to be printed.
@@ -97,6 +98,7 @@ void print_unsigned(unsigned int num, int *count)
 
 	print_char('0' + (num % 10), count);
 }
+
 /**
  * print_hex - Prints a hexadecimal number.
  * @num: Hexadecimal number to be printed.
