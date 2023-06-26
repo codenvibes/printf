@@ -34,6 +34,9 @@ int handle_conversion_specifier(const char specifier, va_list args, int *count)
 		case '%':
 			print_percentage(count);
 			break;
+		case 'b':
+			print_binary(va_arg(args, unsigned int), count);
+			break;
 		default:
 			print_char('%', count);
 			print_char(specifier, count);
