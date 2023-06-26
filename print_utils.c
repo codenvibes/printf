@@ -85,3 +85,45 @@ void print_binary(unsigned int num, int *count)
 
 	print_char('0' + (num % 2), count);
 }
+/**
+ * print_unsigned - Prints an unsigned integer number.
+ * @num: Unsigned integer number to be printed.
+ * @count: Pointer to the count of characters printed.
+ */
+void print_unsigned(unsigned int num, int *count)
+{
+	if (num / 10)
+		print_unsigned(num / 10, count);
+
+	print_char('0' + (num % 10), count);
+}
+/**
+ * print_hex - Prints a hexadecimal number.
+ * @num: Hexadecimal number to be printed.
+ * @uppercase: Flag indicating if uppercase letters should be used (1) or not (0).
+ * @count: Pointer to the count of characters printed.
+ */
+void print_hex(unsigned int num, int uppercase, int *count)
+{
+	char *hex_digits_lower = "0123456789abcdef";
+	char *hex_digits_upper = "0123456789ABCDEF";
+	char *hex_digits = uppercase ? hex_digits_upper : hex_digits_lower;
+
+	if (num / 16)
+		print_hex(num / 16, uppercase, count);
+
+	print_char(hex_digits[num % 16], count);
+}
+
+/**
+ * print_octal - Prints an octal number.
+ * @num: Octal number to be printed.
+ * @count: Pointer to the count of characters printed.
+ */
+void print_octal(unsigned int num, int *count)
+{
+	if (num / 8)
+		print_octal(num / 8, count);
+
+	print_char('0' + (num % 8), count);
+}
