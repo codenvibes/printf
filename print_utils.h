@@ -43,6 +43,7 @@ void print_integer(int num, int *count);
  * @count: Pointer to the count of characters printed.
  */
 void print_percentage(int *count);
+
 /**
  * print_binary - Prints an unsigned integer in binary format.
  * @num: Unsigned integer to be printed.
