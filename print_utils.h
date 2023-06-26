@@ -80,4 +80,11 @@ void print_octal(unsigned int num, int *count);
  */
 void print_non_printable(char c, int *count);
 
+/**
+ * print_non_printable_string - Prints a string with non-printable characters in the format \x followed by the ASCII code value in hexadecimal.
+ * @str: String to be printed.
+ * @count: Pointer to the count of characters printed.
+ */
+void print_non_printable_string(const char *str, int *count);
+
 #endif
