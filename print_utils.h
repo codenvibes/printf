@@ -9,6 +9,7 @@
 
 #ifndef PRINT_UTILS_H
 #define PRINT_UTILS_H
+#include <stddef.h>
 
 /**
  * print_char - helper function to print a single character.
@@ -88,10 +89,11 @@ void print_non_printable(char c, int *count);
 void print_non_printable_string(const char *str, int *count);
 
 /**
- * print_pointer - Prints a pointer address in hexadecimal format.
- * @ptr: Pointer address to be printed.
+ * print_memory_address - Prints the memory address in hexadecimal format.
+ * @ptr: Pointer to be printed.
  * @count: Pointer to the count of characters printed.
  */
-void print_pointer(void *ptr, int *count);
+void print_address(const void *ptr, int *count);
+
 
 #endif
