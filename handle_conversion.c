@@ -37,6 +37,18 @@ int handle_conversion_specifier(const char specifier, va_list args, int *count)
 		case 'b':
 			print_binary(va_arg(args, unsigned int), count);
 			break;
+		case 'u':
+			print_unsigned(va_arg(args, unsigned int), count);
+			break;
+		case 'o':
+			print_octal(va_arg(args, unsigned int), count);
+			break;
+		case 'x':
+			print_hex(va_arg(args, unsigned int), 0, count);
+			break;
+		case 'X':
+			print_hex(va_arg(args, unsigned int), 1, count);
+			break;
 		default:
 			print_char('%', count);
 			print_char(specifier, count);
