@@ -53,7 +53,7 @@ int handle_conversion_specifier(const char specifier, va_list args, int *count)
 			print_non_printable_string(va_arg(args, char *), count);
 			break;
 		case 'p':
-			print_pointer(va_arg(args, void *), count);
+			print_address(va_arg(args, const void *), count);
 			break;
 		default:
 			print_char('%', count);
@@ -61,5 +61,5 @@ int handle_conversion_specifier(const char specifier, va_list args, int *count)
 			break;
 	}
 
-	return (0);
+	return (1);
 }
