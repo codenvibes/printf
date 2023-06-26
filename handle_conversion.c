@@ -49,6 +49,9 @@ int handle_conversion_specifier(const char specifier, va_list args, int *count)
 		case 'X':
 			print_hex(va_arg(args, unsigned int), 1, count);
 			break;
+		case 'S':
+			print_non_printable_string(va_arg(args, char *), count);
+			break;
 		default:
 			print_char('%', count);
 			print_char(specifier, count);
