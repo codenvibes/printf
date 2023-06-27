@@ -103,19 +103,25 @@ void print_unsigned(unsigned int num, int *count)
 /**
  * print_hex - Prints a hexadecimal number.
  * @num: Hexadecimal number to be printed.
- * @uppercase: Flag indicating if uppercase letters should be used (1) or not (0).
+ * @is_uppercase: Flag indicating if letters should be printed in uppercase.
  * @count: Pointer to the count of characters printed.
+ * @print_prefix: Flag indicating if the '#' prefix should be printed.
  */
-void print_hex(unsigned int num, int uppercase, int *count)
+void print_hex(unsigned int num, bool is_uppercase, int *count, bool print_prefix)
 {
-	char *hex_digits_lower = "0123456789abcdef";
-	char *hex_digits_upper = "0123456789ABCDEF";
-	char *hex_digits = uppercase ? hex_digits_upper : hex_digits_lower;
+    char digits[] = "0123456789abcdef";
+    int base = 16;
 
-	if (num / 16)
-		print_hex(num / 16, uppercase, count);
+    if (print_prefix)
+    {
+        print_char('0', count);
+        print_char(is_uppercase ? 'X' : 'x', count);
+    }
 
-	print_char(hex_digits[num % 16], count);
+    if (num / base)
+        print_hex(num / base, is_uppercase, count, false);
+
+    print_char(digits[num % base], count);
 }
 
 /**
