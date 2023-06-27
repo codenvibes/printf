@@ -89,11 +89,11 @@ void print_non_printable(char c, int *count);
 void print_non_printable_string(const char *str, int *count);
 
 /**
- * print_memory_address - Prints the memory address in hexadecimal format.
- * @ptr: Pointer to be printed.
+ * print_address - Prints a memory address.
+ * @address: Address to be printed.
  * @count: Pointer to the count of characters printed.
  */
-void print_address(const void *ptr, int *count);
+void print_address(void *address, int *count);
 
 
 #endif
