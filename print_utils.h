@@ -10,6 +10,7 @@
 #ifndef PRINT_UTILS_H
 #define PRINT_UTILS_H
 #include <stddef.h>
+#include <stdbool.h>
 
 /**
  * print_char - helper function to print a single character.
@@ -62,10 +63,11 @@ void print_unsigned(unsigned int num, int *count);
 /**
  * print_hex - Prints a hexadecimal number.
  * @num: Hexadecimal number to be printed.
- * @uppercase: Flag indicating if uppercase letters should be used (1) or not (0).
+ * @is_uppercase: Flag indicating if letters should be printed in uppercase.
  * @count: Pointer to the count of characters printed.
+ * @print_prefix: Flag indicating if the '#' prefix should be printed.
  */
-void print_hex(unsigned int num, int uppercase, int *count);
+void print_hex(unsigned int num, bool is_uppercase, int *count, bool print_prefix);
 
 /**
  * print_octal - Prints an octal number.
