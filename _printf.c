@@ -20,9 +20,10 @@
  */
 int _printf(const char *format, ...)
 {
-	va_list args; /* variable argument list */
-	int count = 0; /* no. of characters printed */
+	va_list args; /* Create a va_list to hold the variable arguments */
+	int count = 0; /* a variable to keep track of the no. of characters printed */
 
+	/* Start the variable argument list */
 	va_start(args, format);
 
 	while (format && *format)
@@ -40,6 +41,7 @@ int _printf(const char *format, ...)
 		format++;
 	}
 
+	/* End the variable argument list */
 	va_end(args);
 
 	return (count);
