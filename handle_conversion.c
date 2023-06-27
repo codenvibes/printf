@@ -1,7 +1,7 @@
 /*
  * File: handle_conversion.c
- * Decsription: The source file associated with handle_conversion.h containing function
- *	        definitions.
+ * Decsription: The source file associated with handle_conversion.h
+ *	        containing function definitions.
  * Auth: Terrence M.K
  *	 Tamara Lumumba
  */

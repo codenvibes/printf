@@ -109,19 +109,19 @@ void print_unsigned(unsigned int num, int *count)
  */
 void print_hex(unsigned int num, bool is_uppercase, int *count, bool print_prefix)
 {
-    char digits[] = "0123456789abcdef";
-    int base = 16;
+	char digits[] = "0123456789abcdef";
+	int base = 16;
 
-    if (print_prefix)
-    {
-        print_char('0', count);
-        print_char(is_uppercase ? 'X' : 'x', count);
-    }
+	if (print_prefix)
+	{
+		print_char('0', count);
+		print_char(is_uppercase ? 'X' : 'x', count);
+	}
 
-    if (num / base)
-        print_hex(num / base, is_uppercase, count, false);
+	if (num / base)
+		print_hex(num / base, is_uppercase, count, false);
 
-    print_char(digits[num % base], count);
+	print_char(digits[num % base], count);
 }
 
 /**
@@ -138,7 +138,8 @@ void print_octal(unsigned int num, int *count)
 }
 
 /**
- * print_non_printable - Prints a non-printable character in the format \x followed by the ASCII code value in hexadecimal.
+ * print_non_printable - Prints a non-printable character in the format \x
+ *	followed by the ASCII code value in hexadecimal.
  * @c: Character to be printed.
  * @count: Pointer to the count of characters printed.
  */
@@ -153,7 +154,8 @@ void print_non_printable(char c, int *count)
 }
 
 /**
- * print_non_printable_string - Prints a string with non-printable characters in the format \x followed by the ASCII code value in hexadecimal.
+ * print_non_printable_string - Prints a string with non-printable characters
+ *	in the format \x followed by the ASCII code value in hexadecimal.
  * @str: String to be printed.
  * @count: Pointer to the count of characters printed.
  */
@@ -184,15 +186,16 @@ void print_address(void *address, int *count)
 	print_char('0', count);
 	print_char('x', count);
 
-    for (i = leading_zeroes; i >= 0; i--)
-    {
-        int digit = (addr >> (i * 4)) & 0xF;
-        if (digit != 0 || i == 0)
-        {
-            if (digit < 10)
-                print_char('0' + digit, count);
-            else
-                print_char('a' + (digit - 10), count);
-        }
-    }
+	for (i = leading_zeroes; i >= 0; i--)
+	{
+		int digit = (addr >> (i * 4)) & 0xF;
+
+		if (digit != 0 || i == 0)
+		{
+			if (digit < 10)
+				print_char('0' + digit, count);
+			else
+				print_char('a' + (digit - 10), count);
+		}
+	}
 }
