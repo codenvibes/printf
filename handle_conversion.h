@@ -17,7 +17,8 @@
  * @args: va_list arguments.
  * @count: Pointer to the count of characters printed.
  *
- * Return: Always returns 0.
+ * Return: 1 if the conversion specifier is handled,
+ *	   0 otherwise.
  */
 int handle_conversion_specifier(const char specifier, va_list args, int *count);
 
