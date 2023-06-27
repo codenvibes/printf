@@ -44,10 +44,10 @@ int handle_conversion_specifier(const char specifier, va_list args, int *count)
 			print_octal(va_arg(args, unsigned int), count);
 			break;
 		case 'x':
-			print_hex(va_arg(args, unsigned int), 0, count);
+			print_hex(va_arg(args, unsigned int), false, count, false);
 			break;
 		case 'X':
-			print_hex(va_arg(args, unsigned int), 1, count);
+			print_hex(va_arg(args, unsigned int), true, count, false);
 			break;
 		case 'S':
 			print_non_printable_string(va_arg(args, char *), count);
