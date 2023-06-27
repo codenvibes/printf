@@ -29,7 +29,10 @@ int handle_conversion_specifier(const char specifier, va_list args, int *count)
 			break;
 		case 'd':
 		case 'i':
-			print_integer(va_arg(args, int), count);
+            if (specifier == 'd')
+                print_decimal(va_arg(args, int), count);
+            else if (specifier == 'i')
+                print_integer(va_arg(args, int), count);
 			break;
 		case '%':
 			print_percentage(count);
@@ -38,16 +41,18 @@ int handle_conversion_specifier(const char specifier, va_list args, int *count)
 			print_binary(va_arg(args, unsigned int), count);
 			break;
 		case 'u':
-			print_unsigned(va_arg(args, unsigned int), count);
+            if (specifier == 'u')
+                print_unsigned(va_arg(args, unsigned int), count);
 			break;
 		case 'o':
 			print_octal(va_arg(args, unsigned int), count);
 			break;
 		case 'x':
-			print_hex(va_arg(args, unsigned int), false, count, false);
-			break;
 		case 'X':
-			print_hex(va_arg(args, unsigned int), true, count, false);
+            if (specifier == 'x')
+                print_hex(va_arg(args, unsigned int), false, count, false);
+            else if (specifier == 'X')
+                print_hex(va_arg(args, unsigned int), true, count, false);
 			break;
 		case 'S':
 			print_non_printable_string(va_arg(args, char *), count);
